@@ -1,0 +1,11 @@
+{
+  "name": "bootcampnode",
+  "version": "1.0.0",
+  "description": "Node server with Mongo db to teach GET and POST to bootcamp",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Scott Dougherty",
+  "license": "ISC"
+}
