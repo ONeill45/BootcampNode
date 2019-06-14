@@ -4,13 +4,17 @@
   "description": "Node server with Mongo db to teach GET and POST to bootcamp",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "dev": "nodemon app.js"
   },
   "author": "Scott Dougherty",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "mongoose": "^5.5.15"
+    "mongodb": "^3.2.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }

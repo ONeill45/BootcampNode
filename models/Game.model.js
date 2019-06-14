@@ -1,11 +1,5 @@
-const mongoose = require('mongoose');
+const MongoClient = require('mongodb').MongoClient;
 
-const Schema = mongoose.Schema;
+MongoClient.connect('', (err, db) => {
 
-let GameSchema = new Schema({
-    moves: [{
-        squares: []
-    }]
-});
-
-module.exports = mongoose.model('Game', GameSchema);
+})

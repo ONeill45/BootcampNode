@@ -5,8 +5,12 @@ const bodyParser = require('body-parser');
 //initialize express app
 const app = express();
 
-let port = 1234;
+let port = 3000;
 
 app.listen(port, () => {
     console.log(`Server is running on ${port}`);
 });
+
+app.get('/', (req, res) => {
+    res.send('Hello world');
+})
