@@ -20,7 +20,7 @@ let port = 3001;
 MongoClient.connect('mongodb+srv://dbUser:Odj5W2hHzVhi8WsR@cluster0-xfzxk.mongodb.net/test?retryWrites=true&w=majority', {useNewUrlParser: true }, (err, client) => {
     if(err) return console.log(err);
     db = client.db('Cluster0');
-    app.listen(port, () => {
+    app.listen(process.env.port || port, () => {
         console.log(`Server is running on ${port}`);
     });
     
